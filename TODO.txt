@@ -1,1 +1,4 @@
 - Change the license
+- Change the authors
+- Write a decent README
+- Write a decent TODO list
