@@ -1,0 +1,42 @@
+% inquisitive logic latex package
+% 
+% Gianluca Grilletti
+%
+%% This sty contains the basic definitions and symbols used in the inquisitive semantics framework
+% 
+\NeedsTeXFormat{LaTeX2e}[2015/01/01]
+\ProvidesPackage{inqSem}[2016/10/07 symbols and definition used in inquisitive semantics documents]
+
+
+
+% Required packages
+\RequirePackage{amssymb}
+\RequirePackage{amsmath}
+
+
+
+% symbols
+
+%%% logic operators
+\DeclareMathOperator\ivee{\mathbin{\rotatebox[origin=c]{270}{$\geqslant$}}}
+\DeclareMathOperator\iexists{\overline{\exists}}
+
+%%% logics, languages and signatures
+\DeclareMathOperator\fol{\mathtt{FOL}}
+\DeclareMathOperator\langFol{\mathcal{L}_{\fol}}
+
+\DeclareMathOperator\inqBQ{\mathtt{InqBQ}}
+\DeclareMathOperator\langInqBQ{\mathcal{L}_{\inqBQ}}
+
+
+
+
+
+% commands
+\newcommand\modelInqBQ[1]{\mathcal{#1}}
+
+
+
+\endinput
+%%
+%% End of file `inqSem.sty'.
