@@ -3,3 +3,4 @@
 - Write a decent README
 - Write a decent TODO list
 - Add a gitignore
+- Think how to implement shorthands handling (like \model as \modelInqBQ or something like that)
