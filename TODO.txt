@@ -2,3 +2,4 @@
 - Change the authors
 - Write a decent README
 - Write a decent TODO list
+- Add a gitignore
