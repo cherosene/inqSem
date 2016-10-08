@@ -15,7 +15,7 @@
 
 
 
-% symbols
+% symbols and commands
 
 %%% logic operators
 \DeclareMathOperator\ivee{\mathbin{\rotatebox[origin=c]{270}{$\geqslant$}}}
@@ -28,12 +28,17 @@
 \DeclareMathOperator\inqBQ{\mathtt{InqBQ}}
 \DeclareMathOperator\langInqBQ{\mathcal{L}_{\inqBQ}}
 
+%%% models
+\newcommand*\modelInqBQ[1]{ \mathcal{ #1 } }
+
+%%% model constructions
+\DeclareMathOperator\ioplus{ \oplus }			% direct sum
+\DeclareMathOperator\bigioplus{ \bigoplus }
+\DeclareMathOperator\iuplus{ \uplus }			% disjoint union
+\DeclareMathOperator\bigiuplus{ \biguplus }
 
 
 
-
-% commands
-\newcommand\modelInqBQ[1]{\mathcal{#1}}
 
 
 
