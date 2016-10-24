@@ -12,6 +12,7 @@
 % Required packages
 \RequirePackage{amssymb}
 \RequirePackage{amsmath}
+\RequirePackage{tikz}
 
 
 
@@ -31,6 +32,9 @@
 \DeclareMathOperator\inqBQ{\mathtt{InqBQ}}
 \DeclareMathOperator\langInqBQ{\mathcal{L}_{\inqBQ}}
 
+\DeclareMathOperator\langInqBQms{\mathcal{L}_{\iexists}}
+\DeclareMathOperator\langInqBQma{\mathcal{L}_{\forall}}
+
 %%% models
 \newcommand*\modelInqBQ[1]{ \mathcal{ #1 } }
 
@@ -44,6 +48,24 @@
 \newcommand\blowUpTerm[1]{ \underline{#1} }
 \newcommand\permModel[2]{\blowUp{#1}_{#2}}		% permutation model
 \newcommand\fullPermModel[1]{\mathfrak{S}#1}	% full permutation model
+
+
+
+
+% tikz handlers
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Code from ILLC webpage, minor tweaks %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% node style
+\tikzstyle{world}=[inner sep=2pt, black, circle, fill=lightgray]
+\tikzstyle{worldBlack}=[inner sep=2pt, white, circle, fill=black]
+\tikzstyle{worldWhite}=[inner sep=2pt, black, circle, draw]
+
+%%% line style
+\tikzstyle{info}=[fill=gray,fill opacity=.1, rounded corners]
+\tikzstyle{counter}=[info, densely dashed]
+
 
 
 
