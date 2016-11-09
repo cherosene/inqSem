@@ -46,7 +46,7 @@
 \newcommand\omegaModel[1]{ {#1}_{\omega} }		% omega model
 \newcommand\blowUp[1]{ \mathcal{B}#1 }			% blowUp model
 \newcommand\blowUpTerm[1]{ \underline{#1} }
-\newcommand\permModel[2]{\blowUp{#1}_{#2}}		% permutation model
+\newcommand\permModel[2]{ \mathcal{B}_{#2}#1 }		% permutation model
 \newcommand\fullPermModel[1]{\mathfrak{S}#1}	% full permutation model
 
 
@@ -60,7 +60,7 @@
 %%% node style
 \tikzstyle{world}=[inner sep=2pt, black, circle, fill=lightgray]
 \tikzstyle{worldBlack}=[inner sep=2pt, white, circle, fill=black]
-\tikzstyle{worldWhite}=[inner sep=2pt, black, circle, draw]
+\tikzstyle{worldWhite}=[inner sep=2pt, black, circle, fill=white, draw]
 
 %%% line style
 \tikzstyle{info}=[fill=gray,fill opacity=.1, rounded corners]
