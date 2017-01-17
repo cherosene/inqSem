@@ -19,7 +19,9 @@
 % symbols and commands
 
 %%% logic operators
-\DeclareMathOperator\ivee{\mathbin{\rotatebox[origin=c]{270}{$\geqslant$}}}
+\DeclareMathOperator\ivee{\mathrel{\rotatebox[origin=c]{270}{$\geqslant$}}}
+\DeclareMathOperator*\bigivee{\scalebox{1.8}{$\ivee$}}
+%\DeclareMathOperator\bigivee{\rotatebox[origin=c]{270}{\scalebox{2}{$\geqslant$}}}
 \DeclareMathOperator\iexists{\overline{\exists}}
 
 %%% logics, languages and signatures
