@@ -13,6 +13,7 @@
 \RequirePackage{amssymb}
 \RequirePackage{amsmath}
 \RequirePackage{tikz}
+\RequirePackage{scalerel}
 
 
 
@@ -20,13 +21,17 @@
 
 %%% logic operators
 \DeclareMathOperator\ivee{\mathrel{\rotatebox[origin=c]{270}{$\geqslant$}}}
-\DeclareMathOperator*\bigivee{\scalebox{1.8}{$\ivee$}}
+% \DeclareMathOperator*\bigivee{\scalebox{1.8}{$\ivee$}}
+\DeclareMathOperator*\bigivee{\boldsymbol{\raisebox{-.85pt}{\rotatebox{-2}{\scaleobj{1.375}{\backslash}}}}\mkern-13mu\bigvee}
 %\DeclareMathOperator\bigivee{\rotatebox[origin=c]{270}{\scalebox{2}{$\geqslant$}}}
 \DeclareMathOperator\iexists{\overline{\exists}}
 
 %%% logics, languages and signatures
-\DeclareMathOperator\fol{\mathtt{FOL}}
+\DeclareMathOperator\fol{\mathtt{FO}}
 \DeclareMathOperator\langFol{\mathcal{L}_{\fol}}
+
+\DeclareMathOperator\cqc{\mathtt{CQC}}
+\DeclareMathOperator\langCqc{\mathcal{L}_{\cqc}}
 
 \DeclareMathOperator\inqB{\mathtt{InqB}}
 \DeclareMathOperator\langInqB{\mathcal{L}_{\inqB}}
@@ -49,12 +54,9 @@
 \newcommand\omegaModel[1]{ {#1}_{\omega} }		% omega model
 \newcommand\blowUp[1]{ \mathcal{B}#1 }			% blowUp model
 \newcommand\blowUpTerm[1]{ \underline{#1} }
-\newcommand\permModel[2]{ \mathcal{B}^{#2}#1 }		% permutation model
+\newcommand\permModel[2]{ \mathcal{B}_{#2}#1 }		% permutation model
 \newcommand\fullPermModel[1]{\mathfrak{S}#1}	% full permutation model
 
-
-%%% deductive systems
-\DeclareMathOperator{\hinqBQ}{\mathcal{H}\inqBQ}
 
 
 
