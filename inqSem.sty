@@ -20,39 +20,39 @@
 % symbols and commands
 
 %%% logic operators
-\DeclareMathOperator\ivee{\mathrel{\rotatebox[origin=c]{270}{$\geqslant$}}}
-% \DeclareMathOperator*\bigivee{\scalebox{1.8}{$\ivee$}}
-\DeclareMathOperator*\bigivee{\boldsymbol{\raisebox{-.85pt}{\rotatebox{-2}{\scaleobj{1.375}{\backslash}}}}\mkern-13mu\bigvee}
+\newcommand\ivee{\mathrel{\rotatebox[origin=c]{270}{$\geqslant$}}}
+% \newcommand*\bigivee{\scalebox{1.8}{$\ivee$}}
+\newcommand*\bigivee{{\boldsymbol{\raisebox{-.85pt}{\rotatebox{-2}{\scaleobj{1.375}{\backslash}}}}\mkern-13mu\bigvee}}
 %\DeclareMathOperator\bigivee{\rotatebox[origin=c]{270}{\scalebox{2}{$\geqslant$}}}
-\DeclareMathOperator\iexists{\overline{\exists}}
+\newcommand\iexists{\overline{\exists}}
 
 %%% logics, languages and signatures
-\DeclareMathOperator\fol{\mathtt{FO}}
-\DeclareMathOperator\langFol{\mathcal{L}_{\fol}}
+\newcommand\fol{\mathtt{FO}}
+\newcommand\langFol{\mathcal{L}_{\fol}}
 
-\DeclareMathOperator\cqc{\mathtt{CQC}}
-\DeclareMathOperator\langCqc{\mathcal{L}_{\cqc}}
+\newcommand\cqc{\mathtt{CQC}}
+\newcommand\langCqc{\mathcal{L}_{\cqc}}
 
-\DeclareMathOperator\inqB{\mathtt{InqB}}
-\DeclareMathOperator\langInqB{\mathcal{L}_{\inqB}}
+\newcommand\inqB{\mathtt{InqB}}
+\newcommand\langInqB{\mathcal{L}_{\inqB}}
 
-\DeclareMathOperator\inqBQ{\mathtt{InqBQ}}
-\DeclareMathOperator\langInqBQ{\mathcal{L}_{\inqBQ}}
+\newcommand\inqBQ{\mathtt{InqBQ}}
+\newcommand\langInqBQ{\mathcal{L}_{\inqBQ}}
 
-\DeclareMathOperator\hinqBQ{\mathcal{H}\inqBQ}
+\newcommand\hinqBQ{\mathcal{H}\inqBQ}
 
-\DeclareMathOperator\langInqBQms{\mathcal{L}_{\iexists}}
-\DeclareMathOperator\langInqBQma{\mathcal{L}_{\forall}}
+\newcommand\langInqBQms{\mathcal{L}_{\iexists}}
+\newcommand\langInqBQma{\mathcal{L}_{\forall}}
 
 %%% models
 \newcommand*\modelInqBQ[1]{ \mathcal{ #1 } }
 
 %%% model constructions
-\DeclareMathOperator\ioplus{ \oplus }			% direct sum
-\DeclareMathOperator\bigioplus{ \bigoplus }
-\DeclareMathOperator\iuplus{ \uplus }			% disjoint union
-\DeclareMathOperator\bigiuplus{ \biguplus }
-\DeclareMathOperator\iprod{ \prod }			% product
+\newcommand\ioplus{ \oplus }			% direct sum
+\newcommand\bigioplus{ \bigoplus }
+\newcommand\iuplus{ \uplus }			% disjoint union
+\newcommand\bigiuplus{ \biguplus }
+\newcommand\iprod{ \prod }			% product
 \newcommand\omegaModel[1]{ {#1}_{\omega} }		% omega model
 \newcommand\blowUp[1]{ \mathcal{B}#1 }			% blowUp model
 \newcommand\blowUpTerm[1]{ \underline{#1} }
@@ -73,6 +73,7 @@
 \tikzstyle{worldWhite}=[inner sep=2pt, black, circle, fill=white, draw]
 
 %%% line style
+\tikzstyle{modelbox}=[rounded corners]
 \tikzstyle{info}=[fill=gray,fill opacity=.1, rounded corners]
 \tikzstyle{counter}=[info, densely dashed]
 
